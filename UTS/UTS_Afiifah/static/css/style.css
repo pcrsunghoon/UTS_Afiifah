@@ -1,0 +1,150 @@
+body {
+    font-family: arial, sans-serif;
+    background-color: rgb(227, 165, 186);
+    margin: 0;
+    padding: 0;
+    background-image: url("/static/image/bgn.jpeg?v=1");
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+/* CONTAINER UTAMA */
+.container1 {
+    width: 80%;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(6px);
+    padding: 20px;
+    border: 1px solid #ff99cc;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(117, 2, 73, 0.795);
+}
+
+/* ROW UNTUK CONTAINER 2 & 3 */
+.row {
+    display: flex;
+    gap: 15px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* CONTAINER 2 & 3 (DIBUAT SAMA PERSIS) */
+.container2, 
+.container3 {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    backdrop-filter: blur(6px);
+    border: 1px solid #ff99cc;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(117, 2, 73, 0.795);
+    font-family: 'pasifico', cursive;
+
+    /* HAPUS EFEK NARIK SENDIRI */
+    margin: 0;
+}
+
+.container1,
+.container2,
+.container3,
+.container4,
+.box {
+    transition: 0.3s ease;
+}
+
+.container1:hover,
+.container2:hover,
+.container3:hover,
+.container4:hover,
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.row-3 {
+    display: flex;
+    gap: 15px;
+    width: 80%;
+    margin: 40px auto;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.box {
+    flex: 1; /* ini bikin 3 kolom sama besar */
+    min-width: 200px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(6px);
+    padding: 20px;
+    border: 1px solid #ff99cc;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(225, 105, 180, 0.3);
+    text-align: center;
+    transition: 0.3s;
+}
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* FLEX ISI DALAM CONTAINER 2 */
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+/* TEKS */
+.text {
+    width: 60%;
+}
+
+/* FOTO */
+.photo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+    object-fit: cover;
+    border: 3px solid #ff99cc;
+}
+
+/* TEXT STYLE */
+h1 {
+    color: rgb(220, 110, 169);
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+}
+
+h2 {
+    color: deeppink;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+}
+
+.title {
+    color: deeppink;
+}
+
+p {
+    color: black;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+}
+
+ul {
+    color: deeppink;
+}
+
+/* WRAPPER (kalau masih dipakai) */
+.wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .row {
+        flex-direction: column;
+    }
+}
