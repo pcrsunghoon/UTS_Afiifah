@@ -1,0 +1,253 @@
+/* TARUH DI BARIS PALING ATAS FILE STYLE.CSS */
+
+.skill-container {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    gap: 30px !important;
+    flex-wrap: wrap !important;
+    width: 100% !important;
+    margin: 20px auto !important;
+}
+
+.skill-box {
+    flex: 1 !important;
+    min-width: 250px !important;
+    max-width: 400px !important;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Bikin background kotak putih agak transparan */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+body {
+font-family: 'Pacifico', cursive;
+background-color: rgb(227, 165, 186);
+margin: 0;
+padding: 0;
+background-image: url("/static/image/bgn.jpeg?v=1");
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+/* CONTAINER HEADER */
+.container1 {
+width: 80%;
+margin: 40px auto;
+background: rgba(255, 255, 255, 0.6);
+backdrop-filter: blur(6px);
+padding: 20px;
+border: 1px solid #ff99cc;
+border-radius: 10px;
+box-shadow: 0 0 30px rgba(117, 2, 73, 0.795);
+}
+
+/* ROW UNTUK CONTAINER 2 & 3 */
+.row {
+display: flex;
+gap: 15px;
+width: 80%;
+margin: 0 auto;
+}
+
+/* CARD UTAMA */
+.container2,
+.container3 {
+flex: 1;
+background: rgba(255, 255, 255, 0.6);
+padding: 20px;
+backdrop-filter: blur(6px);
+border: 1px solid #ff99cc;
+border-radius: 10px;
+box-shadow: 0 0 30px rgba(117, 2, 73, 0.795);
+font-family: 'Pacifico', cursive;
+}
+
+/* FLEX ISI CONTAINER 2 (PROFIL ME) */
+.flex {
+    display: flex;
+    flex-direction: column; /* Mengubah susunan menjadi atas-bawah */
+    align-items: center;    /* Membuat foto dan teks otomatis berada di tengah */
+    justify-content: center;
+    gap: 20px;              /* Jarak antara foto dan judul "Me!" */
+}
+
+.text {
+    width: 100% !important; /* Membuat lebar teks penuh agar list-nya tidak tertekan */
+    font-family: 'Pacifico', cursive;
+}
+
+.text h2 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.text ul {
+    text-align: left !important; /* Menjaga teks biodata tetap rapi rata kiri */
+    padding-left: 20px !important; /* Jarak aman agar bullet point tidak keluar kotak */
+}
+
+.photo img {
+    width: 350px;
+    height: 250px;
+    border-radius: 15px;
+    object-fit: cover;
+    border: 3px solid #ff99cc;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto; /* Memastikan foto benar-benar di tengah card */
+}
+
+/* SKILL SECTION */
+.skill-container {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 20px;
+}
+
+.skill-box {
+    width: 50%;
+}
+
+.skill-box h3 {
+text-align: center;
+color: deeppink;
+font-family: 'Pacifico', cursive;
+}
+
+.skill-box ul {
+    color: deeppink;
+    font-family: 'Pacifico', cursive;
+}
+
+/* TEXT */
+h1 {
+color: rgb(220, 110, 169);
+text-align: center;
+font-family: 'Pacifico', cursive;
+}
+
+h2 {
+color: deeppink;
+text-align: center;
+font-family: 'Pacifico', cursive;
+}
+
+h3 {
+color: deeppink;
+text-align: center;
+font-family: 'Pacifico', cursive;
+}
+
+.title {
+color: deeppink;
+text-align: center;
+font-family: 'Pacifico', cursive;
+}
+
+p {
+color: deeppink;
+text-align: center;
+font-family: 'Pacifico', cursive;
+}
+
+ul {
+color: deeppink;
+font-family: 'Pacifico', cursive;
+}
+
+/* HOVER EFFECT */
+.container1,
+.container2,
+.container3,
+.box {
+transition: 0.3s ease;
+}
+
+.container1:hover,
+.container2:hover,
+.container3:hover,
+.box:hover {
+transform: translateY(-5px);
+box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* BOX SECTION */
+.row-3 {
+display: flex;
+gap: 15px;
+width: 80%;
+margin: 40px auto;
+align-items: stretch;
+flex-wrap: wrap;
+font-family: 'Pacifico', cursive;
+}
+
+.box {
+flex: 1;
+min-width: 200px;
+background: rgba(255, 255, 255, 0.5);
+backdrop-filter: blur(6px);
+padding: 20px;
+border: 1px solid #ff99cc;
+border-radius: 10px;
+box-shadow: 0 0 30px rgba(117, 2, 73, 0.795);
+text-align: justify;
+}
+
+/* QUOTE */
+.quote {
+width: 80%;
+margin: 20px auto;
+background: rgba(255, 255, 255, 0.5);
+padding: 15px;
+border-radius: 10px;
+text-align: center;
+}
+
+/* FOOTER */
+footer {
+text-align: center;
+padding: 15px;
+color: deeppink;
+font-family: 'Pacifico', cursive;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+.row {
+flex-direction: column;
+}
+
+
+.skill-container {
+    flex-direction: column;
+}
+
+.flex {
+    flex-direction: column;
+    text-align: center;
+}
+
+.text {
+    width: 100%;
+}
+
+
+}
+
+.skill-container {
+    display: flex;
+    gap: 15px;
+}
+
+.skill-box {
+    flex: 1;
+}
+
+.skill-box h3 {
+    color: deeppink;
+    text-align: center;
+    font-family: cursive;
+}
+
